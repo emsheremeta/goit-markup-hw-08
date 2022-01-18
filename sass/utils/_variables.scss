@@ -1,0 +1,24 @@
+/* цвет основного текста #757575 */
+/* цвет вторичного текста #212121;*/
+/* акцент #2196F3;*/
+/* белый : #FFFFFF;*/
+
+/* background header #FFFFFF */
+/* background hero  #F5F4FA; */
+/* background section 2 #E5E5E5; */
+/* background Наша команда #F5F4FA; */
+/* background footer #2F303A;*/
+/* backgroung button #F5F4FA */
+/* soacial links color #AFB1B8 */
+:root{
+    --primary-text-color:#757575;
+    --secondary-text-color:#F5F4FA;
+    --title-color: #212121;
+    --accent-color:#2196F3;
+    --white-color: #FFFFFF;
+    --background-buttom-color: #F5F4FA;
+    --background-footer: #2F303A;
+    --socia-linls:#AFB1B8;
+    --timefunction:cubic-bezier(0.4, 0, 0.2, 1);
+}
+

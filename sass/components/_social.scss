@@ -1,0 +1,123 @@
+// .social{
+//     display: flex;
+//     align-items: center;
+//     padding-bottom: 30px;
+//     padding-left: 32px;
+// }
+// .social__links{
+//     height: 44px;
+//     width: 44px;
+//     fill: var(--socia-linls);
+//     margin: 0;
+//     padding: 12px;
+//     border-radius: 50%;
+//     background-color: var(--white-color);
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     transition:background-color 250ms var(--timefunction);
+
+// &:hover,
+// &:focus{
+//    background-color: var(--accent-color);
+// }
+// }
+
+// .social__list:nth-child(-n + 4){
+//     margin-right: 10px;
+
+// &:last-child{
+//     margin-right: 0;
+// }
+// }
+
+// .social__links:hover .social__icon,
+// .social__links:focus .social__icon{
+//     fill: var(--white-color);
+// }
+
+.social {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-left: 32px;
+  }
+}
+.social__links {
+  @media screen and (min-width: 480px) {
+    height: 44px;
+    width: 44px;
+    fill: var(--socia-linls);
+    margin: 0;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    transition: background-color 250ms var(--timefunction);
+  }
+  @media screen and (min-width: 1200px) {
+    height: 44px;
+    width: 44px;
+    fill: var(--socia-linls);
+    margin: 0;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms var(--timefunction);
+  }
+}
+
+.social__links:hover,
+.social__links:focus {
+  @media screen and (min-width: 480px) {
+    background-color: var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    background-color: var(--accent-color);
+  }
+}
+.social__links:hover .social__icon,
+.social__links:focus .social__icon {
+  @media screen and (min-width: 480px) {
+    fill: var(--white-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    fill: var(--white-color);
+  }
+}
+.social__list:nth-child(-n + 4) {
+    @media screen and (min-width: 480px){
+        margin-right: 10px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-right: 10px;
+    }
+}
+ 
+
+  .social__links:last-child {
+    @media screen and (min-width: 480px){
+        margin-right: 0;
+    }
+    @media screen and (min-width: 480px){
+        margin-right: 0;
+    }
+}

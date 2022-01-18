@@ -1,0 +1,119 @@
+// .client{
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//     margin: 0;
+//     background-color: var(--white-color);
+
+//     transition:background-color 250ms var(--timefunction);
+
+// &__name{
+//     color: var(--title-color);
+
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 36px;
+//     line-height: 42px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+
+//     margin-top: 0;
+//     margin-bottom: 50px;
+//     padding: 0;
+// }
+// &__list{
+//     margin: 0;
+//     padding: 0;
+
+//     display: flex;
+//     justify-content: center;
+// }
+// &__icon{
+//     fill: var(--socia-linls);
+// }
+// }
+
+// .clients__item{
+//     margin: 0;
+//     padding: 0;
+
+// &:nth-child(-n + 6){
+//     margin-right: 30px;
+// }
+// &:last-child{
+//     margin-right: 0;
+// }
+// }
+
+// .client__link{
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid var(--socia-linls);
+
+// &:hover,
+// &:focus{
+//     background-color: var(--white-color);
+//     border: 1px solid var(--accent-color);
+// }
+// &:hover .client__icon,
+// &:focus .client__icon{
+//     fill: var(--accent-color);
+// }
+// }
+.client__list{
+    margin: -15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.client__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+}
+
+.clients__item {
+ width: calc((100% - 60px) / 2);
+  margin: 15px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.client__icon {
+  fill: var(--socia-linls);
+  
+}
+.client__link {
+
+  width: 210px;
+  height: 92px;
+  
+
+  &:hover,
+  &:focus {
+    background-color: var(--white-color);
+    border: 1px solid var(--accent-color);
+  }
+  &:hover .client__icon,
+  &:focus .client__icon {
+    fill: var(--accent-color);
+  }
+}
