@@ -20,7 +20,14 @@
                 <a href="" class="navigation__logo" >
                    <span class="navigation__logo--accent">Web</span><span class="navigation__title">Studio</span>
                 </a>  
-                <div class="menu-container is-open" id="menu-container" data-menu>
+                 <button type="button" class="mobile-button is-open" aria-expanded="false" aria-controls='menu-container' data-menu-button>
+                     <svg  width='40' height='40' aria-label="Переключатель мобильного меню">
+                        <use  class="mobile-button__cross" href='./svg/menuSpritesvg/symbol-defs.svg#icon-menu_24px' ></use>
+                         <use class="mobile-button__menu"   href='./svg/menuSpritesvg/symbol-defs.svg#icon-close_24px'></use>
+                         
+                     </svg>
+                 </button>
+                 <div class="menu-container "id="menu-container" data-menu>
                     <ul class="navigation__elements list">
                         <li class="navigation__list">
                             <a href="./index.html" class="navigation__link navigation__link--current navigation__link--active">Студия</a></li>
@@ -29,16 +36,10 @@
                         <li class="navigation__list">
                             <a href="" class="navigation__link">Контакты</a></li>
                     </ul>
-                    <!-- mobile button menu -->
-                    <button type="button" class="mobile-button is-open" aria-expanded="false" aria-controls='mebu-container' data-menu-button>
-                        <svg aria-label="Переключатель мобильного меню">
-                            <use class="mobile-button__cross" href='./svg/menuSpritesvg/symbol-defs.svg#icon-close_24px' width='18.67px' height='18.67px'></use>
-                            <use class="mobile-button__menu" href='./svg/menuSpritesvg/symbol-defs.svg#icon-menu_24px' width='24px' height='16px'></use>
-                        </svg> 
-                    </button>
+                <div class="wrap">
                     <ul class="contact list">
                         <li class="contact__list">
-                            <a href="mailto:info@devstudio.com" class="contact__link ">
+                            <a href="mailto:info@devstudio.com" class="contact__link contact__link--email ">
                                 <svg class="contact__icon"  wigth='16' height='12'>
                                     <use href='./images/icons.svg#icon-envelope'></use>
                                 </svg>
@@ -46,17 +47,38 @@
                             </a>
                         </li>
                         <li class="contact__list">
-                            <a href="tel:+380961111111" class="contact__link ">
+                            <a href="tel:+380961111111" class="contact__link contact__link--number ">
                                 <svg class="contact__icon"  wigth='16' height='12'>
                                     <use href='./images/icons.svg#icon-vector'></use>
                                 </svg>
                                 +38 096 111 11 11</a>
                         </li>
                     </ul>
+                    <ul class="mobile-social">
+                        <li class="mobile-social__elements">
+                            <a href="#" class="mobile-social__links">Instagram</a>
+                        </li>
+                        <li class="mobile-social__elements">
+                            <a href="#" class="mobile-social__links">Twitter</a>
+                        </li>
+                        <li class="mobile-social__elements">
+                            <a href="#" class="mobile-social__links">Facebook</a>
+                        </li>
+                        <li class="mobile-social__elements">
+                            <a href="#" class="mobile-social__links">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+                  
+
+                </div>
+
+               
+                   
                 </nav>
                   
                 </div>
-            </div>
+           
    
         </div>
 </header>  
