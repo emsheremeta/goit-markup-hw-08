@@ -53,6 +53,14 @@
   color: #ffffff;
 
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    color: var(--white-color);
+    font-size: 44px;
+    line-height: 1.36;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 .hero-section__button {
   color: var(--white-color);
@@ -74,4 +82,9 @@
 
   display: block;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.87;
+
+    transition: background-color 250ms var(--timefunction), color 250ms var(--timefunction);
+  }
 }

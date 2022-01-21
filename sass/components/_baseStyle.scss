@@ -17,6 +17,9 @@ body {
     margin: 0;
    
 }
+body.modal-open{
+    overflow: hidden;
+}
 .list {
     list-style: none;
 }
@@ -41,3 +44,8 @@ ul{
     width: 1200px;
 }
 }
+img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }

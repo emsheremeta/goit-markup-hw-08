@@ -13,8 +13,14 @@
 .mobile-social {
   display: flex;
   align-items: center;
-  
+  @media screen and (min-width:768px){
+    display: none;
+  }
+  @media screen and (min-width:1200px) {
+    display: none;
+  }
 }
+
 .mobile-social__elements {
   margin-right: 20px;
 }
@@ -35,5 +41,22 @@
 }
 
 .wrap{
-    margin-top: 135px;
+    margin-top: 75px;
+    @media screen and (min-width:768px) {
+      margin: 0;
+      padding: 0;
+  
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+    @media screen and (min-width:1200px) {
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 230px;
+    }
 }
