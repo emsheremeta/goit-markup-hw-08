@@ -532,39 +532,39 @@ img {
     background-color: #2f303a;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("/mobile/Header_img[1].jpg");
+    background-image: url("../moblile/Header_img[1].jpg");
     background-size: cover;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 639px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 639px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 639px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 639px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("/mobile/Header_img@2x[1].jpg");
+    background-image: url("../mobile/Header_img@2x[1].jpg");
     background-size: cover;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .hero-section {
-    background-image: url("/tablet/Header_img[1].jpg");
+    background-image: url("../tablet/Header_img[1].jpg");
     background-size: cover;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 640px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 640px) and (max-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 640px) and (max-width: 1024px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(/tablet/Header_img@2x[1].jpg);
+    background-image: url("../tablet/Header_img@2x[1].jpg");
     background-size: cover;
   }
 }
 @media screen and (min-width: 1024px) {
   .hero-section {
     padding: 200px 0;
-    background-image: url(/images/Img16.jpg);
+    background-image: url("../images/Img16.jpg");
     background-size: cover;
     background-position: center;
   }
 }
 @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(/images/Img@2x[3].jpg);
+    background-image: url("../images/Img@2x[3].jpg");
     background-size: cover;
   }
 }
