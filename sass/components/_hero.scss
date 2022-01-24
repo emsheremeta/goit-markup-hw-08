@@ -106,13 +106,13 @@
  
     // width: 480px;
     // height: 400px;
-    background-image: url('../moblile/Header_img[1].jpg');
+    background-image: url("../mobile/headerimg.jpg");
     // background-size: 480px 400px;
     background-size: cover;
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url('../mobile/Header_img@2x[1].jpg');
+    background-image: url("../mobile/headerimg2x.jpg");
     background-size: cover;
   }
 }
@@ -120,13 +120,13 @@
 @media screen and (min-width:640px) and (max-width: 1024px){
   // width: 768px;
   // height: 400px;
-  background-image: url('../tablet/Header_img[1].jpg');
+  background-image: url("../tablet/headerimg.jpg");
   // background-size: 768px 400px;
   background-size: cover;
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url('../tablet/Header_img@2x[1].jpg');
+    background-image: url("../tablet/headerimg2x.jpg");
     background-size: cover;
   }
 }
@@ -141,7 +141,7 @@
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url('../images/Img@2x[3].jpg');
+    background-image: url("../images/headerimg2x.jpg");
     background-size: cover;
   }
 }
