@@ -169,11 +169,6 @@ img {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
-  .menu-container {
-    position: relative;
-  }
-}
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -351,10 +346,9 @@ img {
   }
 }
 
-@media screen and (max-width: 767pxpx) {
+@media screen and (max-width: 767px) {
   .contact {
     margin: 0;
-    display: flex;
     margin-left: auto;
     padding: 0;
   }
