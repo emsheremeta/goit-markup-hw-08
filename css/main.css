@@ -62,11 +62,6 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -144,9 +139,8 @@ img {
   width: 40px;
   height: 40px;
   z-index: 333333;
-  margin-left: 221px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mobile-button {
     display: none;
   }
@@ -175,6 +169,11 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .menu-container {
+    position: relative;
+  }
+}
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -183,7 +182,6 @@ img {
     width: 100vw;
     height: 100vh;
     background: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -268,7 +266,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -41px;
     display: block;
     width: 100%;
     height: 4px;
@@ -278,15 +276,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .navigation__link--active::after {
-    content: "";
-    position: absolute;
-    left: 0;
     bottom: -1px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
   }
 }
 
@@ -343,7 +333,7 @@ img {
 }
 
 .wrap {
-  margin-top: 100px;
+  margin-top: 260px;
 }
 @media screen and (min-width: 768px) {
   .wrap {
@@ -597,6 +587,11 @@ img {
     padding: 94px 15px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .backdrop {
+    padding: 208px 159px;
+  }
+}
 .backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -606,11 +601,6 @@ img {
 }
 
 .modal {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%) scale(1);
-  transition: transform 250ms var(--timefunction);
   width: 450px;
   height: 609px;
   background: #ffffff;
@@ -618,10 +608,30 @@ img {
   border-radius: 4px;
   padding: 40px;
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(1);
+    width: 450px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(1);
+    transition: transform 250ms var(--timefunction);
   }
 }
 .modal__name {
@@ -1641,6 +1651,7 @@ img {
   .portfolio-section {
     padding-bottom: 0;
     margin-bottom: 60px;
+    padding-top: 60px;
   }
 }
 .portfolio-section__elements {
