@@ -1,43 +1,48 @@
 /* HERO BLOCK*/
 .hero-section {
-  background-color: #2f303a;
-  padding: 200px 0;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
-    url('../images/Img16.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-color: #2f303a;
+  // padding: 200px 0;
+  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+  //   url('../images/Img16.jpg');
+  // background-repeat: no-repeat;
+  // background-position: center;
 
-  // &__title{
-  //     color: var(--white-color) ;
-  //     font-weight: 900;
-  //     font-size: 44px;
-  //     line-height: 1.36;
-  //     text-align: center;
-  //     text-transform: uppercase;
+  
 
-  //     margin-top: 0;
-  //     margin-bottom: 30px;
-  // }
-  // &__button {
-  //     color: var(--white-color);
-  //     background-color: var(--accent-color);
-  //     border-color: var(--accent-color);
-  //     font-weight: 700;
-  //     font-size: 16px;
-  //     line-height:1.87;
-  //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ 
+    
 
-  //     border-radius: 4px;
-  //     padding: 10px 32px;
+  &__title{
+      color: var(--white-color) ;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      text-transform: uppercase;
 
-  //     display: block;
-  //     text-align: center;
-  //     margin-left: auto;
-  //     margin-right: auto;
+      margin-top: 0;
+      margin-bottom: 30px;
+  }
+  &__button {
+      color: var(--white-color);
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      font-weight: 700;
+      font-size: 16px;
+      line-height:1.87;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  //     transition:background-color 250ms var(--timefunction),
-  //     color 250ms var(--timefunction);
-  // }
+      border-radius: 4px;
+      padding: 10px 32px;
+
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      transition:background-color 250ms var(--timefunction),
+      color 250ms var(--timefunction);
+  }
 }
 
 .hero-section__title {
@@ -53,6 +58,7 @@
   color: #ffffff;
 
   margin-bottom: 30px;
+  
   @media screen and (min-width: 1200px) {
     color: var(--white-color);
     font-size: 44px;
@@ -86,5 +92,67 @@
     line-height: 1.87;
 
     transition: background-color 250ms var(--timefunction), color 250ms var(--timefunction);
+  }
+}
+.hero-section{
+
+  @media screen and (min-width:320px) and (max-width: 639px){
+  background-color: #2f303a;
+//   // padding: 200px 0;
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+//     url('../images/Img16.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+    // width: 480px;
+    // height: 400px;
+    background-image: url('/mobile/Header_img[1].jpg');
+    // background-size: 480px 400px;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('/mobile/Header_img@2x[1].jpg');
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width:640px) and (max-width: 1024px){
+  // width: 768px;
+  // height: 400px;
+  background-image: url('/tablet/Header_img[1].jpg');
+  // background-size: 768px 400px;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(/tablet/Header_img@2x[1].jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width:1024px) {
+  padding: 200px 0;
+  // width: 1600px;
+  // height: 600px;
+  background-image: url(/images/Img16.jpg);
+  // background-size: 1600px 600px;
+  background-size: cover;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(/images/Img@2x[3].jpg);
+    background-size: cover;
+  }
+}
+}
+.hero-section__wrap{
+  @media screen and (max-width:480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 1024px){
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }

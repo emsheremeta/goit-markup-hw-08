@@ -6,9 +6,13 @@
     letter-spacing: 0.03em;
     text-decoration: none;
 
+    top: 100%;
+
     display: flex;
     justify-content: center;
-    
+    @media screen and (min-width:768px) {
+        margin-right: 88px;
+    }
     &--accent {
         color:var(--accent-color);
     }

@@ -11,41 +11,88 @@
 </head>
 <body>
     <header class="header">
-        <div class="container ">
-            <div class="header__page">
-                <nav class="navigation">
-                <a href="" class="navigation__logo" >
-                   <span class="navigation__logo--accent">Web</span><span class="navigation__title">Studio</span>
-                </a>     
-                <ul class="navigation__elements list">
-                    <li class="navigation__list">
-                        <a href="./index.html" class="navigation__link ">Студия</a></li>
-                    <li class="navigation__list">
-                        <a href="./portfolio.html" class="navigation__link navigation__link--current navigation__link--active">Портфолио</a></li>
-                    <li class="navigation__list">
-                        <a href="" class="navigation__link">Контакты</a></li>
-                </ul>
-            </nav>
-                <ul class="contact list">
-                    <li class="contact__list">
-                        <a href="mailto:info@devstudio.com" class="contact__link ">
-                            <svg class="contact__icon"  wigth='16' height='12'>
-                                <use href='./images/icons.svg#icon-envelope'></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="contact__list">
-                        <a href="tel:+380961111111" class="contact__link ">
-                            <svg class="contact__icon"  wigth='16' height='12'>
-                                <use href='./images/icons.svg#icon-vector'></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
+        <div class=" header__page container ">
+            <a href="" class="navigation__logo" >
+                <span class="navigation__logo--accent">Web</span><span class="navigation__title">Studio</span>
+             </a>  
+             <button type="button" class="mobile-button is-open" aria-expanded="false" aria-controls='menu-container' data-menu-button>
+                <svg  width='40' height='40' aria-label="Переключатель мобильного меню" class="mobile-button__sign">
+                   <use  class="mobile-button__cross" href='./svg/menuSpritesvg/symbol-defs.svg#icon-menu_24px' ></use>
+                    <use class="mobile-button__menu"   href='./svg/menuSpritesvg/symbol-defs.svg#icon-close_24px'></use>
+                    
+                </svg>
+            </button>
+            <div class="menu-container "id="menu-container" data-menu>
+                <!-- <div class="header__page"> -->
+                    <nav class="navigation">
+                        <!-- <a href="" class="navigation__logo" >
+                           <span class="navigation__logo--accent">Web</span><span class="navigation__title">Studio</span>
+                        </a>   -->
+                         <!-- <button type="button" class="mobile-button is-open" aria-expanded="false" aria-controls='menu-container' data-menu-button>
+                             <svg  width='40' height='40' aria-label="Переключатель мобильного меню">
+                                <use  class="mobile-button__cross" href='./svg/menuSpritesvg/symbol-defs.svg#icon-menu_24px' ></use>
+                                 <use class="mobile-button__menu"   href='./svg/menuSpritesvg/symbol-defs.svg#icon-close_24px'></use>
+                                 
+                             </svg>
+                         </button> -->
+                         <ul class="navigation__elements list">
+                         <!-- <div class="menu-container "id="menu-container" data-menu> -->
+                            <!-- <ul class="navigation__elements list"> -->
+                                <li class="navigation__list">
+                                    <a href="./index.html" class="navigation__link ">Студия</a></li>
+                                <li class="navigation__list">
+                                    <a href="./portfolio.html" class="navigation__link navigation__link--current navigation__link--active">Портфолио</a></li>
+                                <li class="navigation__list">
+                                    <a href="" class="navigation__link">Контакты</a></li>
+                            </ul>
+                        <div class="wrap">
+                            <ul class="contact list">
+                                <li class="contact__list">
+                                    <a href="mailto:info@devstudio.com" class="contact__link contact__link--email ">
+                                        <svg class="contact__icon"  wigth='16' height='12'>
+                                            <use href='./images/icons.svg#icon-envelope'></use>
+                                        </svg>
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                                <li class="contact__list">
+                                    <a href="tel:+380961111111" class="contact__link contact__link--number ">
+                                        <svg class="contact__icon"  wigth='16' height='12'>
+                                            <use href='./images/icons.svg#icon-vector'></use>
+                                        </svg>
+                                        +38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                            <ul class="mobile-social">
+                                <li class="mobile-social__elements">
+                                    <a href="#" class="mobile-social__links">Instagram</a>
+                                </li>
+                                <li class="mobile-social__elements">
+                                    <a href="#" class="mobile-social__links">Twitter</a>
+                                </li>
+                                <li class="mobile-social__elements">
+                                    <a href="#" class="mobile-social__links">Facebook</a>
+                                </li>
+                                <li class="mobile-social__elements">
+                                    <a href="#" class="mobile-social__links">LinkedIn</a>
+                                </li>
+                            <!-- </ul> -->
+                        </div>
+                          
+        
+                        <!-- </div> -->
+        
+                       </ul>
+                    </div>
+                           
+                        </nav>
             </div>
+            
+<!--                   
+                </div> -->
+           
    
-        </div>
+        
 </header>  
 <!--  main-section portfolio -->
     <main>
@@ -78,7 +125,9 @@
     <ul  class="gallery">
         <li class="gallery__list list">
             <div class="gallery__component">
-                <img src="./images/img7.jpg" alt="Веб-сайт" width="370">
+                <img 
+                srcset="/mobile/portfolio.jpg 1x, /mobile/1portfolio740.jpg 2x, /tablet/portfolio3.jpg 1x, /tablet/1portfolio740.jpg 2x,/images/img7.jpg 1x, /images/9portfolio740.jpg 2x "
+                src="./images/img7.jpg" alt="Веб-сайт" >
                 <p class="gallery__article" >Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
 
@@ -89,7 +138,9 @@
         </li>
         <li class="gallery__list list">
            <div class="gallery__component">
-            <img src="./images/img8.jpg" alt="Дизайн" width="370">
+            <img 
+            srcset="/mobile/portfolio2.jpg 1x, /mobile/2portfolio740.jpg 2x, /tablet/img7.jpg 1x, /tablet/2portfolio740.jpg 2x,/images/img8.jpg 1x, /images/4portfolio740.jpg 2x "
+            src="./images/img8.jpg" alt="Дизайн" >
             <p class="gallery__article" >Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
            </div>
 
@@ -99,7 +150,9 @@
         </div> 
            <li class="gallery__list list">
                <div class="gallery__component">
-                <img src="./images/img9.jpg" alt="Приложение" width="370" class="gallery__img">
+                <img 
+                srcset="/mobile/portfolio3.jpg 1x, /mobile/3portfolio740.jpg 2x, /tablet/img5.jpg 1x, /tablet/3portfolio740.jpg 2x,/images/img9.jpg 1x, /images/5portfolio740.jpg 2x "
+                src="./images/img9.jpg" alt="Приложение" class="gallery__img">
                 <p class="gallery__article" > Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                </div>
 
@@ -110,7 +163,9 @@
            </li>
            <li class="gallery__list list">
                <div class="gallery__component">
-                <img src="./images/img10.jpg" alt="Маркетинг" width="370" class="gallery__img">
+                <img 
+                srcset="/mobile/portfolio8.jpg 1x, /mobile/9portfolio740.jpg 2x, /tablet/img6.jpg 1x, /tablet/4portfolio740.jpg 2x, /images/img10.jpg 1x, /images/1portfolio740.jpg 2x "
+                src="./images/img10.jpg" alt="Маркетинг"class="gallery__img">
                 <p class="gallery__article" > Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                </div>
 
@@ -121,7 +176,9 @@
         </li>
         <li class="gallery__list list">
             <div class="gallery__component">
-                <img src="./images/img11.jpg" alt="Приложение" width="370" class="gallery__img">
+                <img 
+                srcset="/mobile/portfolio1.jpg 1x, /mobile/10portfolio740.jpg 2x, /tablet/img8.jpg 1x, /tablet/5portfolio740.jpg 2x,/images/img11.jpg 1x, /images/6portfolio740.jpg 2x "
+                src="./images/img11.jpg" alt="Приложение" class="gallery__img">
                 <p class="gallery__article" > Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             
@@ -132,7 +189,9 @@
         </li>
         <li class="gallery__list list">
             <div class="gallery__component">
-                <img src="./images/img12.jpg" alt="Веб-сайт" width="370" class="gallery__img">
+                <img
+                srcset="/mobile/portfolio4.jpg 1x, /mobile/5portfolio740.jpg 2x, /tablet/img9.jpg 1x, /tablet/6portfolio740.jpg 2x,/images/img12.jpg 1x, /images/2portfolio740.jpg 2x "
+                src="./images/img12.jpg" alt="Веб-сайт"class="gallery__img">
                 <p class="gallery__article" > Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
 
@@ -143,7 +202,9 @@
         </li>
         <li class="gallery__list list">
             <div class="gallery__component">
-                <img src="./images/img13.jpg" alt="Дизайн" width="370" class="gallery__img">
+                <img
+                srcset="/mobile/portfolio5.jpg 1x, /mobile/6portfolio740.jpg 2x, /tablet/img10.jpg 1x, /tablet/7portfolio740.jpg 2x,/images/img13.jpg 1x, /images/7portfolio740.jpg 2x "
+                src="./images/img13.jpg" alt="Дизайн"  class="gallery__img">
                 <p class="gallery__article" > Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
             
@@ -154,7 +215,9 @@
         </li>
         <li class="gallery__list list">
             <div class="gallery__component">
-                <img src="./images/img14.jpg" alt="Маркетинг" width="370" class="gallery__img">
+                <img 
+                srcset="/mobile/portfolio6.jpg 1x, /mobile/7portfolio740.jpg 2x, /tablet/portfolio.jpg 1x, /tablet/8portfolio740.jpg 2x,/images/img14.jpg 1x, /images/3portfolio740.jpg 2x "
+                src="./images/img14.jpg" alt="Маркетинг"  class="gallery__img">
                 <p class="gallery__article" > Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
            
@@ -165,7 +228,9 @@
         </li>
         <li class="gallery__list list">
             <div class="gallery__component">
-                <img src="./images/img15.jpg" alt="Приложение" width="370" class="gallery__img">
+                <img 
+                srcset="/mobile/portfolio7.jpg 1x, /mobile/8portfolio740.jpg 2x, /tablet/portfolio2.jpg 1x, /tablet/9portfolio740.jpg 2x,/images/img15.jpg 1x, /images/8portfolio740.jpg 2x "
+                src="./images/img15.jpg" alt="Приложение" class="gallery__img">
                 <p class="gallery__article" > Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
            
@@ -180,53 +245,56 @@
 </div>
 </main>
 <!-- footer -->
-
 <footer  class="footer">
     <div class="container footer--flex ">
-        <div class="footer__section">
-        <a href="" class="navigation__logo navigation__logo--footer" >
-            <span class="navigation__logo--accent">Web</span><span class="navigation__title navigation__title--white">Studio</span>
-         </a>  
-    <address class="address">г. Киев, пр-т Леси Украинки, 26</address> 
-    <a href="mailto:info@example.com " class="address__footer">info@example.com</a></br>
-    <a href="tel:+380991111111" class="address__footer">+38 099 111 11 11</a>
-    </div>
-    
-<!-- social links FOOTER -->
-
-        <div class="footer-section">
-            <h3 class="footer-section__name">ПРИСОЕДИНЯЙТЕСЬ</h3>
-            <ul class="social social--box list ">
-                <li class="social__list social__list--color">
-                    <a href="" class="social__links social__links--dark">
-                        <svg class="social__icon social__icon--white" width='20' height='20'>
-                         <use href='./images/icons.svg#icon-instagram2'></use>                         
-                     </svg>
-                    </a>
-                </li>
-                <li class="social__list social__list--color">
-                    <a href="" class="social__links social__links--dark">
-                        <svg class="social__icon social__icon--white" width='20' height='20'>
-                            <use href='./images/icons.svg#icon-twitter1'></use>
-                        </svg>                
-                    </a>
-                </li>
-                <li class="social__list social__list--color">
-                    <a href="" class="social__links  social__links--dark">
-                        <svg class="social__icon social__icon--white" width='20' height='20'>
-                            <use href='./images/icons.svg#icon-facebook1'></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social__list social__list--color">
-                    <a href="" class="social__links  social__links--dark">
-                        <svg class="social__icon social__icon--white" width='20' height='20'>
-                            <use href='./images/icons.svg#icon-linkedin1'></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-
+        <div class="tablet--flex">
+            <div class="footer__section">
+                <a href="" class="navigation__logo navigation__logo--footer" >
+                    <span class="navigation__logo--accent">Web</span><span class="navigation__title navigation__title--white">Studio</span>
+                 </a>  
+            <address class="address">г. Киев, пр-т Леси Украинки, 26</address> 
+            <div class="footer-address">
+            <a href="mailto:info@example.com " class="address__footer">info@example.com</a></br>
+            <a href="tel:+380991111111" class="address__footer">+38 099 111 11 11</a>
+        </div>
+            </div>
+            
+        <!-- social links FOOTER -->
+        
+                <div class="footer-section">
+                    <h3 class="footer-section__name">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                    <ul class="social social--box list ">
+                        <li class="social__list social__list--color">
+                            <a href="" class="social__links social__links--dark">
+                                <svg class="social__icon social__icon--white" width='20' height='20'>
+                                 <use href='./images/icons.svg#icon-instagram2'></use>                         
+                             </svg>
+                            </a>
+                        </li>
+                        <li class="social__list social__list--color">
+                            <a href="" class="social__links social__links--dark">
+                                <svg class="social__icon social__icon--white" width='20' height='20'>
+                                    <use href='./images/icons.svg#icon-twitter1'></use>
+                                </svg>                
+                            </a>
+                        </li>
+                        <li class="social__list social__list--color">
+                            <a href="" class="social__links  social__links--dark">
+                                <svg class="social__icon social__icon--white" width='20' height='20'>
+                                    <use href='./images/icons.svg#icon-facebook1'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__list social__list--color">
+                            <a href="" class="social__links  social__links--dark">
+                                <svg class="social__icon social__icon--white" width='20' height='20'>
+                                    <use href='./images/icons.svg#icon-linkedin1'></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+        
+                </div>
         </div>
 
         <!-- Подпишитесь на рассылку -->
@@ -248,6 +316,7 @@
 </footer>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
 </body>
 </html>
