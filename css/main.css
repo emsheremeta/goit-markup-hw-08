@@ -532,7 +532,7 @@ img {
     background-color: #2f303a;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../mobile/Header_img[1].jpg");
+    background-image: url("../moblile/Header_img[1].jpg");
     background-size: cover;
   }
 }
@@ -557,7 +557,7 @@ img {
 @media screen and (min-width: 1024px) {
   .hero-section {
     padding: 200px 0;
-    background-image: url("/");
+    background-image: url("../images/img16.jpg");
     background-size: cover;
     background-position: center;
   }
