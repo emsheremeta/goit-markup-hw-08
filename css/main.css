@@ -1366,12 +1366,15 @@ img {
   margin-top: 0;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .navigation__logo--footer {
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .navigation__logo--footer {
     display: inline-block;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
   }
 }
 
@@ -1433,6 +1436,7 @@ img {
   .tablet--flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1638,14 +1642,13 @@ img {
 }
 
 .portfolio-section {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 94px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-section {
     padding-bottom: 0;
     margin-bottom: 60px;
-    padding-top: 60px;
   }
 }
 .portfolio-section__elements {
