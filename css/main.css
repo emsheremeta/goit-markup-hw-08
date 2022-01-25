@@ -887,14 +887,14 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .section__elements {
     display: flex;
     margin: -15px;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
