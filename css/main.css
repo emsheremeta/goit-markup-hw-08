@@ -550,6 +550,7 @@ img {
 @media screen and (min-width: 1024px) {
   .hero-section {
     padding: 200px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url("../images/headerimg2x.jpg");
     background-size: cover;
     background-position: center;
   }
