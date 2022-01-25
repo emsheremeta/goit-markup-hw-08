@@ -1546,6 +1546,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscribe-section__label {
+    text-align: left;
     margin-right: 12px;
   }
 }
