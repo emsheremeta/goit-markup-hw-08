@@ -62,6 +62,11 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -117,7 +122,7 @@ img {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation__logo {
     margin-right: 88px;
   }
@@ -719,6 +724,12 @@ img {
   margin-top: 20px;
   margin-left: 36.38px;
 }
+@media screen and (max-width: 1200px) {
+  .checkbox__policy {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+}
 .checkbox__policy--accent {
   color: var(--accent-color);
   text-decoration: underline;
@@ -734,6 +745,11 @@ img {
   display: flex;
   align-items: center;
   margin-left: 12px;
+}
+@media screen and (max-width: 1200px) {
+  .checkbox__icon {
+    margin-left: 0;
+  }
 }
 .checkbox__input:checked ~ .checkbox__icon {
   background-color: var(--accent-color);
@@ -870,7 +886,8 @@ img {
     display: flex;
     margin: -15px;
     flex-wrap: wrap;
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1086,6 +1103,12 @@ img {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .team {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
 .team__name {
   color: var(--title-color);
   font-weight: 700;
@@ -1169,7 +1192,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .social {
-    display: flex;
     align-items: center;
     padding-bottom: 30px;
     padding-left: 32px;
@@ -1177,8 +1199,6 @@ img {
 }
 
 .social__links {
-  height: 44px;
-  width: 44px;
   fill: var(--socia-linls);
   margin: 0;
   padding: 12px;
@@ -1189,21 +1209,6 @@ img {
   justify-content: center;
   margin-bottom: 24px;
   transition: background-color 250ms var(--timefunction);
-}
-@media screen and (min-width: 1200px) {
-  .social__links {
-    height: 44px;
-    width: 44px;
-    fill: var(--socia-linls);
-    margin: 0;
-    padding: 12px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms var(--timefunction);
-  }
 }
 
 .social__links:hover,
@@ -1224,6 +1229,10 @@ img {
   margin-right: 0;
 }
 
+.client {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 @media screen and (min-width: 1200px) {
   .client {
     padding-top: 94px;
@@ -1238,13 +1247,13 @@ img {
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .client__list {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -1429,7 +1438,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .tablet--flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 }
@@ -1455,6 +1464,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-section__name {
     margin-bottom: 20px;
+    text-align: left;
   }
 }
 
@@ -1487,8 +1497,6 @@ img {
 }
 
 .social__links--dark {
-  height: 44px;
-  width: 44px;
   fill: var(--white-color);
   margin: 0;
   padding: 12px;
@@ -1637,6 +1645,11 @@ img {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 100px;
+  }
+}
 .portfolio-section__elements {
   display: flex;
   flex-wrap: wrap;
@@ -1646,13 +1659,13 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio-section__elements {
     margin-top: 0;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
     padding: 0;
     display: flex;
-    justify-content: center;
     background-color: var(--white-color);
     list-style-type: none;
     border-radius: 4px;
+    justify-content: center;
   }
 }
 .portfolio-section__list:hover .portfolio-section__button, .portfolio-section__list:focus .portfolio-section__button {
@@ -1718,6 +1731,11 @@ img {
 @media screen and (min-width: 768px) {
   .gallery {
     margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-bottom: 94px;
   }
 }
 .gallery__list {

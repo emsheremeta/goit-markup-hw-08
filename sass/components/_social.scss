@@ -44,7 +44,7 @@
     justify-content: center;
   
   @media screen and (min-width: 1200px) {
-    display: flex;
+    
     align-items: center;
     padding-bottom: 30px;
     padding-left: 32px;
@@ -52,8 +52,7 @@
 }
 .social__links {
  
-    height: 44px;
-    width: 44px;
+   
     fill: var(--socia-linls);
     margin: 0;
     padding: 12px;
@@ -67,21 +66,7 @@
 
     transition: background-color 250ms var(--timefunction);
   
-  @media screen and (min-width: 1200px) {
-    height: 44px;
-    width: 44px;
-    fill: var(--socia-linls);
-    margin: 0;
-    padding: 12px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: background-color 250ms var(--timefunction);
-  }
+  
 }
 
 .social__links:hover,

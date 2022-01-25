@@ -67,6 +67,10 @@
 // }
 
 .client {
+ 
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -82,13 +86,14 @@
   display: flex;
 
   flex-wrap: wrap;
-  margin-bottom: 60px;
+ 
   @media screen and (min-width: 1200px) {
     // margin: 0;
     padding: 0;
 
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 .client__name {

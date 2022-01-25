@@ -15,7 +15,7 @@
     @media screen and (min-width: 1200px){
         
         margin-bottom: 20px;
-        
+        text-align: left;
     }
   
   }
@@ -54,8 +54,7 @@
 }
 .social__links--dark{
     
-        height: 44px;
-        width: 44px;
+        
         fill: var(--white-color);
         margin: 0;
         padding: 12px;
