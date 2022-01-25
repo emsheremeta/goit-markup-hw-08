@@ -86,6 +86,7 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 .header__page {
   display: flex;
@@ -144,6 +145,9 @@ img {
   width: 40px;
   height: 40px;
   z-index: 333333;
+  position: fixed;
+  top: auto;
+  right: 25px;
 }
 @media screen and (min-width: 768px) {
   .mobile-button {
@@ -177,7 +181,7 @@ img {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100vw;
     height: 100vh;

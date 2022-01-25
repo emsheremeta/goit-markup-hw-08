@@ -8,6 +8,9 @@
     width: 40px;
     height: 40px;
     z-index: 333333;
+    position: fixed;
+    top: auto;
+    right: 25px;
     
 
    
@@ -48,7 +51,7 @@
       @media screen and (max-width: 767px) {
         display: none;
   
-        position: absolute;
+        position: fixed;
         left: 0;
         width: 100vw;
         height: 100vh;
