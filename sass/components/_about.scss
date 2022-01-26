@@ -14,6 +14,7 @@
   }
 
   &__title {
+
     @media screen and (min-width: 1200px){
         color: var(--title-color);
         font-weight: 700;
@@ -28,6 +29,7 @@
   }
   
   &__elements {
+    
     @media screen and (min-width: 1200px){
     margin-bottom: 0;
     margin-top: 0;
