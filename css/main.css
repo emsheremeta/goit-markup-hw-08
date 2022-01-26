@@ -94,6 +94,7 @@ img {
 @media screen and (max-width: 767px) {
   .header__page {
     padding-top: 16px;
+    padding-bottom: 16px;
     justify-content: space-between;
     position: relative;
   }
@@ -646,13 +647,18 @@ img {
   font-family: Roboto;
   font-weight: bold;
   font-size: 20px;
-  line-height: 0.8;
+  line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-top: 0;
   margin-bottom: 30px;
   padding: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .modal__name {
+    line-height: 30px;
+  }
 }
 .modal__label {
   position: relative;
@@ -1203,8 +1209,6 @@ img {
 @media screen and (min-width: 1200px) {
   .social {
     align-items: center;
-    padding-bottom: 30px;
-    padding-left: 32px;
   }
 }
 
@@ -1515,7 +1519,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscribe-section {
-    margin-left: 93px;
     width: 570px;
     height: 86px;
     align-items: baseline;

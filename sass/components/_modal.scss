@@ -43,7 +43,7 @@
     font-family: Roboto;
     font-weight: bold;
     font-size: 20px;
-    line-height: 0.8;
+    line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -52,6 +52,9 @@
     margin-top: 0;
     margin-bottom: 30px;
     padding: 0;
+    @media screen and (min-width:768px) and (max-width:1024px) {
+      line-height: 30px;
+    }
   }
   &__label {
     position: relative;
