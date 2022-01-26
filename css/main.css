@@ -97,6 +97,7 @@ img {
     padding-bottom: 16px;
     justify-content: space-between;
     position: relative;
+    height: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -104,6 +105,7 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     align-items: center;
+    height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -272,7 +274,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -41px;
+    bottom: -35px;
     display: block;
     width: 100%;
     height: 4px;
@@ -899,7 +901,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1999px) {
   .section__elements {
     display: flex;
     margin: -15px;
