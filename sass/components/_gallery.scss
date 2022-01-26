@@ -25,7 +25,7 @@
 
     transition: box-shadow 250ms var(--timefunction);
 
-    @media screen and (min-width: 768px) and (max-width: 1023px)  {
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
         width: calc((100% - 60px) / 2);
       margin: 15px;
       }
