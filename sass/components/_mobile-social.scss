@@ -13,6 +13,7 @@
 .mobile-social {
   display: flex;
   align-items: center;
+
   @media screen and (min-width:768px){
     display: none;
   }
@@ -20,10 +21,6 @@
     display: none;
   }
 }
-
-// .mobile-social__elements {
-//   margin-right: 20px;
-// }
 .mobile-social__elements + .mobile-social__elements::before {
   content: '';
   width: 22px;
