@@ -1382,7 +1382,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer--flex {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
   }
 }
@@ -1449,14 +1449,12 @@ img {
   .tablet--flex {
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .tablet--flex {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
 }
 
