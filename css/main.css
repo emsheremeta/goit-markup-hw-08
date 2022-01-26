@@ -1181,7 +1181,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     width: calc((100% - 60px) / 2);
     margin: 15px;
